@@ -1,0 +1,17 @@
+# PynSource Version 1.2
+{'type':'meta', 'info1':'Lorem ipsum dolor sit amet, consectetur adipiscing elit is latin. Comments are saved.'}
+{'type':'umlshape', 'id':'CarShop', 'x':384, 'y':115, 'width':82, 'height':124, 'attrs': '_instance|cars|observers', 'meths': '__new__|add_car|add_observer|list_cars'}
+{'type':'umlshape', 'id':'CarFactory', 'x':218, 'y':508, 'width':94, 'height':54, 'attrs': '', 'meths': 'create_car'}
+{'type':'umlshape', 'id':'Car', 'x':251, 'y':130, 'width':58, 'height':104, 'attrs': 'make|model|price', 'meths': '__init__|__str__'}
+{'type':'umlshape', 'id':'ManufacturerCar', 'x':193, 'y':395, 'width':136, 'height':94, 'attrs': 'make|model|price', 'meths': '__init__'}
+{'type':'umlshape', 'id':'ManufacturerCarAdapter', 'x':184, 'y':317, 'width':195, 'height':54, 'attrs': '', 'meths': '__init__'}
+{'type':'umlshape', 'id':'PaymentStrategy', 'x':649, 'y':300, 'width':136, 'height':54, 'attrs': '', 'meths': 'pay'}
+{'type':'umlshape', 'id':'CashPayment', 'x':671, 'y':160, 'width':102, 'height':54, 'attrs': '', 'meths': 'pay'}
+{'type':'umlshape', 'id':'LoanPayment', 'x':665, 'y':453, 'width':102, 'height':54, 'attrs': '', 'meths': 'pay'}
+{'type':'umlshape', 'id':'ShopObserver', 'x':478, 'y':449, 'width':111, 'height':54, 'attrs': '', 'meths': 'notify'}
+{'type':'umlshape', 'id':'Customer', 'x':494, 'y':283, 'width':77, 'height':94, 'attrs': 'name', 'meths': '__init__|buy_car|notify'}
+{'type':'edge', 'id':'ManufacturerCarAdapter_to_Car', 'source':'ManufacturerCarAdapter', 'target':'Car', 'uml_edge_type': 'generalisation'}
+{'type':'edge', 'id':'CashPayment_to_PaymentStrategy', 'source':'CashPayment', 'target':'PaymentStrategy', 'uml_edge_type': 'generalisation'}
+{'type':'edge', 'id':'LoanPayment_to_PaymentStrategy', 'source':'LoanPayment', 'target':'PaymentStrategy', 'uml_edge_type': 'generalisation'}
+{'type':'edge', 'id':'Customer_to_ShopObserver', 'source':'Customer', 'target':'ShopObserver', 'uml_edge_type': 'generalisation'}
+{'type':'edge', 'id':'Car_to_CarShop', 'source':'Car', 'target':'CarShop', 'uml_edge_type': 'composition'}

@@ -1,0 +1,152 @@
+<?xml version="1.0"?>
+<!DOCTYPE graph PUBLIC "-//John Punin//DTD graph description//EN" "http://www.cs.rpi.edu/~puninj/XGMML/xgmml.dtd">
+
+    <graph directed="1" graphic="1" Layout="points">
+
+        <node id="CarShop" label="CarShop&#xa;⎯⎯⎯&#xa;_instance&#xa;cars&#xa;observers&#xa;⎯⎯⎯&#xa;__new__&#xa;add_car&#xa;add_observer&#xa;list_cars" weight="0">
+            <graphics type="ROUND_RECTANGLE" x="384.0" y="115.0" h="160" w="92" fill="#91CFEB" >
+                <att name="NODE_LABEL_POSITION" value="C,C,l,0.00,0.00" type="string" cy:type="String"/>
+                <att name="NODE_LABEL_FONT_SIZE" value="10" type="string" cy:type="String"/>
+            </graphics>
+            <att name="attrs" value="_instance,cars,observers"/>
+            <att name="meths" value="__new__,add_car,add_observer,list_cars"/>
+
+            <att name="width" value="82"/>
+            <att name="height" value="124"/>
+        </node>
+        <node id="CarFactory" label="CarFactory&#xa;⎯⎯⎯&#xa;create_car" weight="0">
+            <graphics type="ROUND_RECTANGLE" x="218.0" y="508.0" h="78" w="104" fill="#91CFEB" >
+                <att name="NODE_LABEL_POSITION" value="C,C,l,0.00,0.00" type="string" cy:type="String"/>
+                <att name="NODE_LABEL_FONT_SIZE" value="10" type="string" cy:type="String"/>
+            </graphics>
+            <att name="attrs" value=""/>
+            <att name="meths" value="create_car"/>
+
+            <att name="width" value="94"/>
+            <att name="height" value="54"/>
+        </node>
+        <node id="Car" label="Car&#xa;⎯⎯⎯&#xa;make&#xa;model&#xa;price&#xa;⎯⎯⎯&#xa;__init__&#xa;__str__" weight="0">
+            <graphics type="ROUND_RECTANGLE" x="251.0" y="130.0" h="140" w="68" fill="#91CFEB" >
+                <att name="NODE_LABEL_POSITION" value="C,C,l,0.00,0.00" type="string" cy:type="String"/>
+                <att name="NODE_LABEL_FONT_SIZE" value="10" type="string" cy:type="String"/>
+            </graphics>
+            <att name="attrs" value="make,model,price"/>
+            <att name="meths" value="__init__,__str__"/>
+
+            <att name="width" value="58"/>
+            <att name="height" value="104"/>
+        </node>
+        <node id="ManufacturerCar" label="ManufacturerCar&#xa;⎯⎯⎯&#xa;make&#xa;model&#xa;price&#xa;⎯⎯⎯&#xa;__init__" weight="0">
+            <graphics type="ROUND_RECTANGLE" x="193.0" y="395.0" h="130" w="146" fill="#91CFEB" >
+                <att name="NODE_LABEL_POSITION" value="C,C,l,0.00,0.00" type="string" cy:type="String"/>
+                <att name="NODE_LABEL_FONT_SIZE" value="10" type="string" cy:type="String"/>
+            </graphics>
+            <att name="attrs" value="make,model,price"/>
+            <att name="meths" value="__init__"/>
+
+            <att name="width" value="136"/>
+            <att name="height" value="94"/>
+        </node>
+        <node id="ManufacturerCarAdapter" label="ManufacturerCarAdapter&#xa;⎯⎯⎯&#xa;__init__" weight="0">
+            <graphics type="ROUND_RECTANGLE" x="184.0" y="317.0" h="78" w="205" fill="#91CFEB" >
+                <att name="NODE_LABEL_POSITION" value="C,C,l,0.00,0.00" type="string" cy:type="String"/>
+                <att name="NODE_LABEL_FONT_SIZE" value="10" type="string" cy:type="String"/>
+            </graphics>
+            <att name="attrs" value=""/>
+            <att name="meths" value="__init__"/>
+
+            <att name="width" value="195"/>
+            <att name="height" value="54"/>
+        </node>
+        <node id="PaymentStrategy" label="PaymentStrategy&#xa;⎯⎯⎯&#xa;pay" weight="0">
+            <graphics type="ROUND_RECTANGLE" x="649.0" y="300.0" h="78" w="146" fill="#91CFEB" >
+                <att name="NODE_LABEL_POSITION" value="C,C,l,0.00,0.00" type="string" cy:type="String"/>
+                <att name="NODE_LABEL_FONT_SIZE" value="10" type="string" cy:type="String"/>
+            </graphics>
+            <att name="attrs" value=""/>
+            <att name="meths" value="pay"/>
+
+            <att name="width" value="136"/>
+            <att name="height" value="54"/>
+        </node>
+        <node id="CashPayment" label="CashPayment&#xa;⎯⎯⎯&#xa;pay" weight="0">
+            <graphics type="ROUND_RECTANGLE" x="671.0" y="160.0" h="78" w="112" fill="#91CFEB" >
+                <att name="NODE_LABEL_POSITION" value="C,C,l,0.00,0.00" type="string" cy:type="String"/>
+                <att name="NODE_LABEL_FONT_SIZE" value="10" type="string" cy:type="String"/>
+            </graphics>
+            <att name="attrs" value=""/>
+            <att name="meths" value="pay"/>
+
+            <att name="width" value="102"/>
+            <att name="height" value="54"/>
+        </node>
+        <node id="LoanPayment" label="LoanPayment&#xa;⎯⎯⎯&#xa;pay" weight="0">
+            <graphics type="ROUND_RECTANGLE" x="665.0" y="453.0" h="78" w="112" fill="#91CFEB" >
+                <att name="NODE_LABEL_POSITION" value="C,C,l,0.00,0.00" type="string" cy:type="String"/>
+                <att name="NODE_LABEL_FONT_SIZE" value="10" type="string" cy:type="String"/>
+            </graphics>
+            <att name="attrs" value=""/>
+            <att name="meths" value="pay"/>
+
+            <att name="width" value="102"/>
+            <att name="height" value="54"/>
+        </node>
+        <node id="ShopObserver" label="ShopObserver&#xa;⎯⎯⎯&#xa;notify" weight="0">
+            <graphics type="ROUND_RECTANGLE" x="478.0" y="449.0" h="78" w="121" fill="#91CFEB" >
+                <att name="NODE_LABEL_POSITION" value="C,C,l,0.00,0.00" type="string" cy:type="String"/>
+                <att name="NODE_LABEL_FONT_SIZE" value="10" type="string" cy:type="String"/>
+            </graphics>
+            <att name="attrs" value=""/>
+            <att name="meths" value="notify"/>
+
+            <att name="width" value="111"/>
+            <att name="height" value="54"/>
+        </node>
+        <node id="Customer" label="Customer&#xa;⎯⎯⎯&#xa;name&#xa;⎯⎯⎯&#xa;__init__&#xa;buy_car&#xa;notify" weight="0">
+            <graphics type="ROUND_RECTANGLE" x="494.0" y="283.0" h="130" w="87" fill="#91CFEB" >
+                <att name="NODE_LABEL_POSITION" value="C,C,l,0.00,0.00" type="string" cy:type="String"/>
+                <att name="NODE_LABEL_FONT_SIZE" value="10" type="string" cy:type="String"/>
+            </graphics>
+            <att name="attrs" value="name"/>
+            <att name="meths" value="__init__,buy_car,notify"/>
+
+            <att name="width" value="77"/>
+            <att name="height" value="94"/>
+        </node>
+
+        <edge source="ManufacturerCarAdapter" target="Car" type="last" weight="0" label="Edge from ManufacturerCarAdapter to Car">
+            <graphics width="2.0" fill="#848484">
+                <att name="EDGE_LINE_TYPE" value="SOLID" type="string" cy:type="String"/>
+                <att name="EDGE_SOURCE_ARROW_SHAPE" value="NONE" type="string" cy:type="String"/>
+                <att name="EDGE_TARGET_ARROW_SHAPE" value="OPEN_DELTA" type="string" cy:type="String"/>
+            </graphics>
+        </edge>
+        <edge source="CashPayment" target="PaymentStrategy" type="last" weight="0" label="Edge from CashPayment to PaymentStrategy">
+            <graphics width="2.0" fill="#848484">
+                <att name="EDGE_LINE_TYPE" value="SOLID" type="string" cy:type="String"/>
+                <att name="EDGE_SOURCE_ARROW_SHAPE" value="NONE" type="string" cy:type="String"/>
+                <att name="EDGE_TARGET_ARROW_SHAPE" value="OPEN_DELTA" type="string" cy:type="String"/>
+            </graphics>
+        </edge>
+        <edge source="LoanPayment" target="PaymentStrategy" type="last" weight="0" label="Edge from LoanPayment to PaymentStrategy">
+            <graphics width="2.0" fill="#848484">
+                <att name="EDGE_LINE_TYPE" value="SOLID" type="string" cy:type="String"/>
+                <att name="EDGE_SOURCE_ARROW_SHAPE" value="NONE" type="string" cy:type="String"/>
+                <att name="EDGE_TARGET_ARROW_SHAPE" value="OPEN_DELTA" type="string" cy:type="String"/>
+            </graphics>
+        </edge>
+        <edge source="Customer" target="ShopObserver" type="last" weight="0" label="Edge from Customer to ShopObserver">
+            <graphics width="2.0" fill="#848484">
+                <att name="EDGE_LINE_TYPE" value="SOLID" type="string" cy:type="String"/>
+                <att name="EDGE_SOURCE_ARROW_SHAPE" value="NONE" type="string" cy:type="String"/>
+                <att name="EDGE_TARGET_ARROW_SHAPE" value="OPEN_DELTA" type="string" cy:type="String"/>
+            </graphics>
+        </edge>
+        <edge source="Car" target="CarShop" type="last" weight="0" label="Edge from Car to CarShop">
+            <graphics width="2.0" fill="#848484">
+                <att name="EDGE_LINE_TYPE" value="SOLID" type="string" cy:type="String"/>
+                <att name="EDGE_SOURCE_ARROW_SHAPE" value="ARROW" type="string" cy:type="String"/>
+                <att name="EDGE_TARGET_ARROW_SHAPE" value="OPEN_DIAMOND" type="string" cy:type="String"/>
+            </graphics>
+        </edge>
+    </graph>        
