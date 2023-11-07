@@ -31,7 +31,7 @@ The Observer pattern is used for notifying customers about the availability of c
 
 ## Running the Code
 
-To run the code, execute the `if __name__ == "__main__":` block at the end of the script. This block creates instances of the various classes, adds cars to the shop, defines payment strategies, and demonstrates customer purchases with different payment options.
+To run the code, clone to your folder using `git clone [https://github.com/daurenswrld/final_sdp]` , then open terminal and use `python3 01.py run` code.
 
 ## Conclusion
 
